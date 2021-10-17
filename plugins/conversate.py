@@ -95,7 +95,7 @@ def BasicHandlerMaster(client: pyrogram.Client, msg: pyrogram.types.Message):
 )
 def CmdStart_HelpOthers(client: pyrogram.Client, msg: pyrogram.types.Message):
     msg.reply_text(
-        text=f"Hi, use this bot to talk to {client.MASTER.first_name} {client.MASTER.last_name if client.MASTER.last_name else ''}, @{client.MASTER.username if client.MASTER.username else ''} ({client.MASTER.id})",
+        text=f"Hi, use this bot to talk to the Provider.",
         disable_notification=False,
     )
 
