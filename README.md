@@ -1,4 +1,4 @@
-Telegram bot used as a proxy to chat with people.
+# Telegram bot used as a proxy to chat with people.
 
 ### Features
 
@@ -15,19 +15,12 @@ Telegram bot used as a proxy to chat with people.
 
 ### Installing
 
-Clone this repository.
-
-Cd into it.
-
-``` bash
-pip3 install -r requirements.txt
-```
-
-Rename proto_config.json into config.json and update it with your data.
-
-``` bash
-python3 bot.py
-```
+* `git clone https://github.com/Peppuz/proxy-tg-bot.git`
+* `cd proxy-tg-bot`
+* `pip3 install -r requirements.txt`
+* `mv proto_config.json config.json` and 
+* update `config.json` with your data.
+* `python3 bot.py`
 
 ### Copyright & License
 
