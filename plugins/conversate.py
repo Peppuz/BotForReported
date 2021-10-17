@@ -74,7 +74,7 @@ def BasicHandlerMaster(client: pyrogram.Client, msg: pyrogram.types.Message):
                 ]
             )
             try:
-                msg.forward(chat_id=user_id, disable_notification=False)
+                client.send_message(chat_id=user_id, text=msg.text, disable_notification=False)
                 client.send_chat_action(chat_id=utils.config["master"], action="typing")
             except pyrogram.errors.UserIsBlocked:
                 msg.reply_text(
